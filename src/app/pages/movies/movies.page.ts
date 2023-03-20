@@ -10,9 +10,9 @@ import { MovieService } from 'src/app/services/movie.service';
   styleUrls: ['./movies.page.scss'],
 })
 export class MoviesPage implements OnInit {
-  movies:Array<any> = [];
-  current_page = 1;
-  imageBaseUrl = environment.imageUrl;
+  movies: any[] = [];
+  current_page: number = 1;
+  imageBaseUrl: string = environment.imageUrl;
 
   constructor(
     private movieServie: MovieService,
