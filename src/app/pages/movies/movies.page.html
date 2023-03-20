@@ -17,7 +17,7 @@
       </ion-label>
 
       <ion-badge slot="end">
-        {{ item.vote_average }}
+        {{ item.vote_average | number:'0.1' }}
       </ion-badge>
     </ion-item>
   </ion-list>

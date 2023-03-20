@@ -1,14 +1,14 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>{{ movie?.title }}</ion-title>
-    <ion-back-button slot="start" defaultHref="/movies"></ion-back-button>
+    <ion-back-button slot="start" defaultHref="/"></ion-back-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-card *ngIf="movie">
     <img
-      [src]="imageBaseUrl + '/w400/' + movie.backdrop_path"/>
+      [src]="imageBaseUrl + '/w400/' + movie.poster_path"/>
 
     <ion-card-header>
       <ion-card-title>{{ movie.title }}</ion-card-title>
@@ -32,7 +32,7 @@
 
       <ion-item lines="none" color="light">
         <ion-icon name="cash-outline" slot="start" size="medium"  />
-        <ion-label>Budget : {{ movie.budget | currency:'MYR' }}</ion-label>
+        <ion-label>Budget : {{ movie.budget | currency:'USD' }}</ion-label>
       </ion-item>
 
     </ion-card-content>
