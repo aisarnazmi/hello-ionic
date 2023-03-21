@@ -26,15 +26,14 @@
       </p>
 
       <ion-item lines="none" color="light">
-        <ion-icon name="calendar-outline" slot="start" size="medium"  />
-        <ion-label>Released : {{ movie.release_date | date:'y' }}</ion-label>
-      </ion-item>
-
-      <ion-item lines="none" color="light">
         <ion-icon name="cash-outline" slot="start" size="medium"  />
         <ion-label>Budget : {{ movie.budget | currency:'USD' }}</ion-label>
       </ion-item>
 
+      <ion-item lines="none" color="light">
+        <ion-icon name="calendar-outline" slot="start" size="medium"  />
+        <ion-label>Released : {{ movie.release_date | date:'y' }}</ion-label>
+      </ion-item>
     </ion-card-content>
   </ion-card>
 </ion-content>
