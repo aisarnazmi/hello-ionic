@@ -6,7 +6,15 @@ export const environment = {
   production: false,
   apikey: 'a97243d7813d31446f6c43284e6854d5',
   baseUrl: 'https://api.themoviedb.org/3',
-  imageUrl: 'http://image.tmdb.org/t/p'
+  imageUrl: 'http://image.tmdb.org/t/p',
+  firebaseConfig: {
+    apiKey: 'AIzaSyCSpTO_904LJQez7dnWAD0vX9uo1fbZFOs',
+    authDomain: 'hello-ionic-f2a85.firebaseapp.com',
+    projectId: 'hello-ionic-f2a85',
+    storageBucket: 'hello-ionic-f2a85.appspot.com',
+    messagingSenderId: '998791504351',
+    appId: '1:998791504351:web:3131f26ffc888e982ba46a',
+  },
 };
 
 /*
